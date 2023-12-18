@@ -1,9 +1,7 @@
 package com.example.api.Service;
 
-import com.example.api.DTO.AuthDTO;
-import com.example.api.DTO.CensorResponseDTO;
-import com.example.api.DTO.UserResponseDTO;
-import com.example.api.DTO.UserUpdateProfileDTO;
+import com.example.api.DTO.*;
+import com.example.api.Entity.Major;
 import com.example.api.Entity.Role;
 import com.example.api.Entity.User;
 
@@ -11,6 +9,7 @@ import com.example.api.Entity.User;
 import com.example.api.Entity.ValidToken;
 import com.example.api.Exception.*;
 
+import com.example.api.Repository.MajorRepository;
 import com.example.api.Repository.RoleRepository;
 import com.example.api.Repository.UserRepository;
 //import com.example.api.Repository.User_RoleRepository;
@@ -36,6 +35,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private MajorRepository majorRepository;
 
     @Autowired
     private JwtGenerator jwtGenerator;
@@ -65,16 +67,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User createUser(User user) {
-
-        Optional<User> checkUser = userRepository.findByUsername(user.getUsername());
-        if (checkUser.isPresent()) {
-            throw new UserAlreadyExistException(user.getUsername() + "User already exist");
+    public User createUser(UserCreateDTO usercreateDTO) {
+        User user = null;
+        Optional<User> checkUser = userRepository.findUserByEmail(usercreateDTO.getEmail());
+        Major major = majorRepository.findById(usercreateDTO.getMajor_id()).get();
+        if(checkUser.isPresent()){
+            throw new UserAlreadyExistException(usercreateDTO.getEmail() + "User already exist");
+        }else {
+            User user1 = new User();
+            Role role =roleRepository.findByName("STUDENT").get();
+            user1.setUsername(usercreateDTO.getEmail().substring(0, usercreateDTO.getEmail().indexOf("@")));
+            user1.setPassword(usercreateDTO.getPassword());
+            user1.setMajor(major);
+            user1.setEmail(usercreateDTO.getEmail());
+            user1.setFullname(usercreateDTO.getFullname());
+            user1.setPersonId(usercreateDTO.getEmail().substring(usercreateDTO.getEmail().lastIndexOf("ps") , usercreateDTO.getEmail().indexOf("@")));
+            user1.setRoles(Collections.singletonList(role));
+            user = userRepository.save(user1);
         }
-        Role role = roleRepository.findByName("STUDENT").get();
-//        user.setRoles();
-        return userRepository.save(user);
 
+        return user;
 
     }
 

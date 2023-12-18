@@ -1,9 +1,6 @@
 package com.example.api.Service.IService;
 
-import com.example.api.DTO.ProjectDTO;
-import com.example.api.DTO.ProjectRequestDTO;
-import com.example.api.DTO.RequestDTO;
-import com.example.api.DTO.UpdateProjectDTO;
+import com.example.api.DTO.*;
 import com.example.api.Entity.*;
 import com.example.api.Exception.NotFoundException;
 import org.springframework.data.repository.query.Param;
@@ -34,9 +31,9 @@ public interface ProjectService {
 
     ProjectDTO updateIsPublic(RequestDTO requestDTO);
 
-    public Integer CountProject(@Param("date") Date date);
+//    public Integer CountProject(@Param("date") Date date);
 
-    public List<Project> TopProjectWithView();
+    public List<ReportDTO> TopProjectWithView();
 
 //    public void DeleteProjectId(UUID projectID);
 //

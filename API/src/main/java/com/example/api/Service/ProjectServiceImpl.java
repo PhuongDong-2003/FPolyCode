@@ -1,10 +1,7 @@
 package com.example.api.Service;
 
 import com.example.api.Constant.StatusEnum;
-import com.example.api.DTO.ProjectDTO;
-import com.example.api.DTO.ProjectRequestDTO;
-import com.example.api.DTO.RequestDTO;
-import com.example.api.DTO.UpdateProjectDTO;
+import com.example.api.DTO.*;
 import com.example.api.Entity.*;
 import com.example.api.Exception.AppException;
 import com.example.api.Exception.NotFoundException;
@@ -227,14 +224,18 @@ public class ProjectServiceImpl implements ProjectService {
         return projectDTO;
     }
 
-    @Override
-    public Integer CountProject(@Param("date") Date date) {
+//    @Override
+//    public Integer CountProject(@Param("date") Date date) {
 //        return projectRepository.CountProject(date);
-        return 0;
-    }
+//        return 0;
+//    }
 
     @Override
-    public List<Project> TopProjectWithView() {
-        return projectRepository.TopProjectWithView();
+    public  List<ReportDTO> TopProjectWithView()
+    {
+        List<Project> projects = projectRepository.TopProjectWithView();
+        return projects.stream()
+                .map(ReportDTO::MapProjectToReportDTO)
+                .collect(Collectors.toList());
     }
 }

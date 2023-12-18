@@ -131,14 +131,25 @@ public class ProjectController {
 
     }
 
-    @GetMapping(value = {"/report"}, consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity FindByKeyWord(@RequestParam Date date) {
-        Integer count = projectServiceImpl.CountProject(date);
-        if (date != null) {
-            return ResponseEntity.ok("Tải thành công");
-        } else {
-            return ResponseEntity.badRequest().body("Tham số không hợp lệ");
+//    @GetMapping(value = {"/report"}, consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+//    public ResponseEntity FindByKeyWord(@RequestParam Date date) {
+//        Integer count = projectServiceImpl.CountProject(date);
+//        if (date != null) {
+//            return ResponseEntity.ok("Tải thành công");
+//        } else {
+//            return ResponseEntity.badRequest().body("Tham số không hợp lệ");
+//        }
+//
+//    }
+
+    @GetMapping(value ={"/reportView"}, consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ApiResponse<?>> ReportView() {
+        List<ReportDTO> reportDTO = projectServiceImpl.TopProjectWithView();
+        if (reportDTO != null   ) {
+            return ResponseEntity.ok(new ApiResponse<List<ReportDTO>>("Thành công", reportDTO));
         }
+        else
+            return ResponseEntity.badRequest().body(new ApiResponse<ResponseError>("Lỗi", new ResponseError("Sản phẩm chưa được cập nhật")));
 
     }
 }

@@ -1,6 +1,7 @@
 package com.example.api.Controller;
 
 import com.example.api.DTO.CensorResponseDTO;
+import com.example.api.DTO.UserCreateDTO;
 import com.example.api.DTO.UserUpdateProfileDTO;
 import com.example.api.Entity.Role;
 import com.example.api.Entity.User;
@@ -38,8 +39,8 @@ public class UserController {
 
 
     @PostMapping(consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ApiResponse<User>> createUser(@RequestBody User user) {
-        return ResponseEntity.ok(new ApiResponse<User>("Tao thanh cong!", userService.createUser(user)));
+    public ResponseEntity<ApiResponse<User>> createUser(@RequestBody UserCreateDTO userCreateDTO) {
+        return ResponseEntity.ok(new ApiResponse<User>("Tao thanh cong!", userService.createUser(userCreateDTO)));
     }
 
     @GetMapping(consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)

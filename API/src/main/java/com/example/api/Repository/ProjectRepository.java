@@ -37,8 +37,11 @@ public interface ProjectRepository extends JpaRepository<Project, UUID> {
 //            "GROUP BY YEAR(d.createDate), MONTH(d.createDate)")
 //    Integer CountProject(@Param("date") Date date);
 
-    @Query("SELECT p FROM Project p " +
-            "INNER JOIN p.description d " +
+    @Query("SELECT p " +
+            "FROM Major m " +
+            "INNER JOIN User u ON u.major.id = m.id"+
+            " JOIN Project p ON u.id = p.student.id " +
+            "INNER JOIN Description d ON p.id = d.project.id " +
             "ORDER BY d.viewCount DESC")
     List<Project> TopProjectWithView();
 }

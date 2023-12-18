@@ -2,6 +2,7 @@ package com.example.api.Service.IService;
 
 import com.example.api.DTO.AuthDTO;
 import com.example.api.DTO.CensorResponseDTO;
+import com.example.api.DTO.UserCreateDTO;
 import com.example.api.DTO.UserResponseDTO;
 import com.example.api.Entity.Role;
 import com.example.api.Entity.User;
@@ -19,7 +20,7 @@ public interface UserService {
 
     User getUserById(UUID userId);
 
-    User createUser(User user);
+    User createUser(UserCreateDTO usercreateDTO);
 
     User updateUser(UUID userId, User user);
 
