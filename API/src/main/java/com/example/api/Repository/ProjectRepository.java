@@ -42,6 +42,7 @@ public interface ProjectRepository extends JpaRepository<Project, UUID> {
             "INNER JOIN User u ON u.major.id = m.id"+
             " JOIN Project p ON u.id = p.student.id " +
             "INNER JOIN Description d ON p.id = d.project.id " +
+
             "ORDER BY d.viewCount DESC")
     List<Project> TopProjectWithView();
 }

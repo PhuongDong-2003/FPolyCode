@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,14 +16,17 @@ public class ReportDTO {
     Integer view;
     String fullName;
     String major;
+    Date approvalDate;
+
 
 
     public static ReportDTO MapProjectToReportDTO(Project project) {
 
         ReportDTO reportDTO = ReportDTO.builder()
                 .projectName(project.getTitle())
-                .fullName(project.getStudent().getUsername())
+                .fullName(project.getStudent().getFullname())
                 .major(project.getStudent().getMajor().getName())
+                .approvalDate(project.getDescription().getApprovalDate())
                 .view(project.getDescription().getViewCount())
 
                 .build();

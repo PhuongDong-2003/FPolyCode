@@ -77,7 +77,7 @@ public class UserServiceImpl implements UserService {
             User user1 = new User();
             Role role =roleRepository.findByName("STUDENT").get();
             user1.setUsername(usercreateDTO.getEmail().substring(0, usercreateDTO.getEmail().indexOf("@")));
-            user1.setPassword(usercreateDTO.getPassword());
+            user1.setPassword(usercreateDTO.getEmail().substring(usercreateDTO.getEmail().indexOf("ps") + 2 , usercreateDTO.getEmail().indexOf("@")));
             user1.setMajor(major);
             user1.setEmail(usercreateDTO.getEmail());
             user1.setFullname(usercreateDTO.getFullname());
@@ -94,12 +94,11 @@ public class UserServiceImpl implements UserService {
     public User updateUser(UUID userId, User user) {
         User existingUser = userRepository.findById(userId).orElse(null);
         if (existingUser != null) {
-            if (user.getUsername() != null) {
-                existingUser.setUsername(user.getUsername());
-            }
+            existingUser.setUsername(user.getEmail().substring(0, user.getEmail().indexOf("@")));
             if (user.getPassword() != null) {
-                existingUser.setPassword(user.getPassword());
+                existingUser.setPassword(user.getEmail().substring(user.getEmail().indexOf("ps") , user.getEmail().indexOf("@")));
             }
+            existingUser.setPersonId(user.getEmail().substring(user.getEmail().lastIndexOf("ps") , user.getEmail().indexOf("@")));
             if (user.getEmail() != null) {
                 existingUser.setEmail(user.getEmail());
             }
