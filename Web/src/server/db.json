@@ -1,0 +1,188 @@
+{
+  "projects": [
+    {
+      "id": "f6c06ca1-bae8-4cc6-98c4-62fe0955367a",
+      "title": "Java 6 | Spring Boot - Chức năng giỏ hàng",
+      "status": "APPROVE",
+      "public": true,
+      "video": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/videosDemo%2Ffe651672-9b54-4975-9c25-16ab26139ca4?alt=media&token=7372717d-2326-47d0-b30b-b91bcf27568b",
+      "source": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/sourcesDemo%2F2fb0534b-1e22-437a-9fe4-109ff3b36e92_demo.zip?alt=media&token=dacf4999-3856-4529-adaf-3233366ce7d3",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/thumbnailsDemo%2F7504e21d-3a6c-4bfa-9072-9c291a9d9361?alt=media&token=2358ac52-9102-44de-8411-92d20d1d044b",
+      "major": "Ứng dụng phần mềm",
+      "student": {
+        "id": "ed31f981-33ef-4a9b-969d-65c5a01b425d",
+        "email": "dongnpps24660@fpt.edu.vn",
+        "fullname": "Nguyễn Phương Đông",
+        "avatar": "https://plus.unsplash.com/premium_photo-1675865396004-c7b86406affe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+      },
+      "description": {
+        "create_at": "2023-07-24T00:00:00.000+00:00",
+        "approve_at": "2023-07-25T00:00:00.000+00:00",
+        "censor": "Nguyễn Thanh Phước",
+        "techs": ["Java", "Spring Boot", "ReactJS"],
+        "github": "https://github.com/PhuongDong-2003/FPolyShare",
+        "like": 1000,
+        "view": 2000
+      }
+    },
+    {
+      "id": "f6c06ca1-bae8-4cc6-98c4-62fe0955367b",
+      "title": "Java 6 | Spring Boot - Chức năng giỏ hàng",
+      "status": "DENIED",
+      "public": true,
+      "video": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/videosDemo%2Ffe651672-9b54-4975-9c25-16ab26139ca4?alt=media&token=7372717d-2326-47d0-b30b-b91bcf27568b",
+      "source": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/sourcesDemo%2F2fb0534b-1e22-437a-9fe4-109ff3b36e92_demo.zip?alt=media&token=dacf4999-3856-4529-adaf-3233366ce7d3",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/thumbnailsDemo%2F7504e21d-3a6c-4bfa-9072-9c291a9d9361?alt=media&token=2358ac52-9102-44de-8411-92d20d1d044b",
+      "major": "Ứng dụng phần mềm",
+      "student": {
+        "id": "ed31f981-33ef-4a9b-969d-65c5a01b425d",
+        "email": "dongnpps24660@fpt.edu.vn",
+        "fullname": "Nguyễn Phương Đông",
+        "avatar": "https://plus.unsplash.com/premium_photo-1675865396004-c7b86406affe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+      },
+      "description": {
+        "create_at": "2023-07-24T00:00:00.000+00:00",
+        "approve_at": "2023-07-25T00:00:00.000+00:00",
+        "censor": "Nguyễn Thanh Phước",
+        "techs": ["Java", "Spring Boot", "ReactJS"],
+        "github": "https://github.com/PhuongDong-2003/FPolyShare",
+        "like": 1000,
+        "view": 2000
+      }
+    },
+    {
+      "id": "f6c06ca1-bae8-4cc6-98c4-62fe0955367c",
+      "title": "Java 6 | Spring Boot - Chức năng giỏ hàng",
+      "status": "PENDING",
+      "public": true,
+      "video": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/videosDemo%2Ffe651672-9b54-4975-9c25-16ab26139ca4?alt=media&token=7372717d-2326-47d0-b30b-b91bcf27568b",
+      "source": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/sourcesDemo%2F2fb0534b-1e22-437a-9fe4-109ff3b36e92_demo.zip?alt=media&token=dacf4999-3856-4529-adaf-3233366ce7d3",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/thumbnailsDemo%2F7504e21d-3a6c-4bfa-9072-9c291a9d9361?alt=media&token=2358ac52-9102-44de-8411-92d20d1d044b",
+      "major": "Ứng dụng phần mềm",
+      "student": {
+        "id": "ed31f981-33ef-4a9b-969d-65c5a01b425d",
+        "email": "dongnpps24660@fpt.edu.vn",
+        "fullname": "Nguyễn Phương Đông",
+        "avatar": "https://plus.unsplash.com/premium_photo-1675865396004-c7b86406affe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+      },
+      "description": {
+        "create_at": "2023-07-24T00:00:00.000+00:00",
+        "approve_at": "2023-07-25T00:00:00.000+00:00",
+        "censor": "Nguyễn Thanh Phước",
+        "techs": ["Java", "Spring Boot", "ReactJS"],
+        "github": "https://github.com/PhuongDong-2003/FPolyShare",
+        "like": 1000,
+        "view": 2000
+      }
+    },
+    {
+      "id": "f6c06ca1-bae8-4cc6-98c4-62fe0955367d",
+      "title": "Java 6 | Spring Boot - Chức năng giỏ hàng",
+      "status": "APPROVE",
+      "public": true,
+      "video": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/videosDemo%2Ffe651672-9b54-4975-9c25-16ab26139ca4?alt=media&token=7372717d-2326-47d0-b30b-b91bcf27568b",
+      "source": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/sourcesDemo%2F2fb0534b-1e22-437a-9fe4-109ff3b36e92_demo.zip?alt=media&token=dacf4999-3856-4529-adaf-3233366ce7d3",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/thumbnailsDemo%2F7504e21d-3a6c-4bfa-9072-9c291a9d9361?alt=media&token=2358ac52-9102-44de-8411-92d20d1d044b",
+      "major": "Ứng dụng phần mềm",
+      "student": {
+        "id": "ed31f981-33ef-4a9b-969d-65c5a01b425d",
+        "email": "dongnpps24660@fpt.edu.vn",
+        "fullname": "Nguyễn Phương Đông",
+        "avatar": "https://plus.unsplash.com/premium_photo-1675865396004-c7b86406affe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+      },
+      "description": {
+        "create_at": "2023-07-24T00:00:00.000+00:00",
+        "approve_at": "2023-07-25T00:00:00.000+00:00",
+        "censor": "Nguyễn Thanh Phước",
+        "techs": ["Java", "Spring Boot", "ReactJS"],
+        "github": "https://github.com/PhuongDong-2003/FPolyShare",
+        "like": 1000,
+        "view": 2000
+      }
+    },
+    {
+      "id": "f6c06ca1-bae8-4cc6-98c4-62fe0955367e",
+      "title": "Java 6 | Spring Boot - Chức năng giỏ hàng",
+      "status": "APPROVE",
+      "public": true,
+      "video": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/videosDemo%2Ffe651672-9b54-4975-9c25-16ab26139ca4?alt=media&token=7372717d-2326-47d0-b30b-b91bcf27568b",
+      "source": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/sourcesDemo%2F2fb0534b-1e22-437a-9fe4-109ff3b36e92_demo.zip?alt=media&token=dacf4999-3856-4529-adaf-3233366ce7d3",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/thumbnailsDemo%2F7504e21d-3a6c-4bfa-9072-9c291a9d9361?alt=media&token=2358ac52-9102-44de-8411-92d20d1d044b",
+      "major": "Ứng dụng phần mềm",
+      "student": {
+        "id": "ed31f981-33ef-4a9b-969d-65c5a01b425d",
+        "email": "dongnpps24660@fpt.edu.vn",
+        "fullname": "Nguyễn Phương Đông",
+        "avatar": "https://plus.unsplash.com/premium_photo-1675865396004-c7b86406affe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+      },
+      "description": {
+        "create_at": "2023-07-24T00:00:00.000+00:00",
+        "approve_at": "2023-07-25T00:00:00.000+00:00",
+        "censor": "Nguyễn Thanh Phước",
+        "techs": ["Java", "Spring Boot", "ReactJS"],
+        "github": "https://github.com/PhuongDong-2003/FPolyShare",
+        "like": 1000,
+        "view": 2000
+      }
+    },
+    {
+      "id": "f6c06ca1-bae8-4cc6-98c4-62fe0955367f",
+      "title": "Java 6 | Spring Boot - Chức năng giỏ hàng",
+      "status": "PENDING",
+      "public": true,
+      "video": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/videosDemo%2Ffe651672-9b54-4975-9c25-16ab26139ca4?alt=media&token=7372717d-2326-47d0-b30b-b91bcf27568b",
+      "source": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/sourcesDemo%2F2fb0534b-1e22-437a-9fe4-109ff3b36e92_demo.zip?alt=media&token=dacf4999-3856-4529-adaf-3233366ce7d3",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/fvideos-3163f.appspot.com/o/thumbnailsDemo%2F7504e21d-3a6c-4bfa-9072-9c291a9d9361?alt=media&token=2358ac52-9102-44de-8411-92d20d1d044b",
+      "major": "Ứng dụng phần mềm",
+      "student": {
+        "id": "ed31f981-33ef-4a9b-969d-65c5a01b425d",
+        "email": "dongnpps24660@fpt.edu.vn",
+        "fullname": "Nguyễn Phương Đông",
+        "avatar": "https://plus.unsplash.com/premium_photo-1675865396004-c7b86406affe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+      },
+      "description": {
+        "create_at": "2023-07-24T00:00:00.000+00:00",
+        "approve_at": "2023-07-25T00:00:00.000+00:00",
+        "censor": "Nguyễn Thanh Phước",
+        "techs": ["Java", "Spring Boot", "ReactJS"],
+        "github": "https://github.com/PhuongDong-2003/FPolyShare",
+        "like": 1000,
+        "view": 2000
+      }
+    }
+  ],
+  "techs": [
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132a",
+      "name": "Java"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132b",
+      "name": "Spring Boot"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132c",
+      "name": "JPA/Hibernate"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132d",
+      "name": "JavaScript"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132e",
+      "name": "SQL"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132f",
+      "name": "Bootstrap"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132g",
+      "name": "Thymeleaf"
+    },
+    {
+      "id": "9f6792bf-8fab-4377-9f83-d3964179132h",
+      "name": "Angular"
+    }
+  ]
+}
