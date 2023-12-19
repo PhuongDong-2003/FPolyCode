@@ -58,7 +58,7 @@ export const Dashboard = () => {
         { field: 'fullName', headerName: 'Tác giả', width: 150 },
         { field: 'view', headerName: 'Số lượng truy cập', type: 'number', width: 100 },
         { field: '', headerName: '', type: 'number', width: 100 },
-        { field: 'approvalDate', headerName: 'Ngày Được Duyệt', type: 'date', width: 170 },
+        // { field: 'approvalDate', headerName: 'Ngày Được Duyệt', type: date, width: 170 },
     ]
 
 

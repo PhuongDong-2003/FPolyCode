@@ -325,7 +325,7 @@ export const List = () => {
                         color: colors.greenAccent[300],
                     },
                     "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: colors.blueAccent[700],
+                        backgroundColor: colors.redAccent[700],
                         borderBottom: "none",
                     },
                     "& .MuiDataGrid-virtualScroller": {
