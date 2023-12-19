@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000"})
 @RestController
 @RequestMapping("/api/feedbacks")
 public class FeedBackController {

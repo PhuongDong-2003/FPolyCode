@@ -29,6 +29,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.view.RedirectView;
 import org.springframework.web.util.UriComponentsBuilder;
 
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000"})
 @RestController
 @RequestMapping("/api")
 public class AuthController {

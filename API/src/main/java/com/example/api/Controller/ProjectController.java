@@ -22,8 +22,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
-
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000"})
 @RestController
 @RequestMapping("/api/projects")
 public class ProjectController {
@@ -122,6 +123,24 @@ public class ProjectController {
             return ResponseEntity.badRequest().body(new ApiResponse<ResponseError>("Cập nhật phẩm không thành công", new ResponseError("Sản phẩm chưa được cập nhật")));
         }
 
+    }
+
+    @PutMapping("/view")
+    public ResponseEntity<ApiResponse<?>> updateView(@RequestBody UpdateViewDTO updateViewDTO) {
+        ProjectDTO projectDTO = projectServiceImpl.updateView(updateViewDTO);
+        return ResponseEntity.ok(new ApiResponse<>("Cập nhật view lượt xem thành công", projectDTO));
+    }
+
+    @DeleteMapping("/dlt")
+    public ResponseEntity<ResponseMessage> deleteProjects(@RequestBody List<UUID> purchasesToDelete) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        if (authentication.getPrincipal() instanceof UserDetails) {
+            projectServiceImpl.deleteProjects(purchasesToDelete);
+            return ResponseEntity.ok(new ResponseMessage("Xóa dự án thành công"));
+        } else {
+            return ResponseEntity.status(401).body(new ResponseMessage("Người dùng chưa được xác thực"));
+        }
     }
 
     @DeleteMapping(consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)

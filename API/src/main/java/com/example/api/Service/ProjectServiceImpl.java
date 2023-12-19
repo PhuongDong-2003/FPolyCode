@@ -212,6 +212,17 @@ public class ProjectServiceImpl implements ProjectService {
         }
     }
 
+    public ProjectDTO updateView(UpdateViewDTO updateViewDTO) {
+        Project project = projectRepository.findById(updateViewDTO.getProject_id()).get();
+        project.getDescription().setViewCount(updateViewDTO.getViewCount());
+        Project update = projectRepository.save(project);
+        return ProjectDTO.MapProjectToProjectDTO(update);
+    }
+
+    public void deleteProjects(List<UUID> projectsToDelete) {
+        projectsToDelete.forEach((id) -> projectRepository.deleteById(id));
+    }
+
     @Override
     public ProjectDTO updateIsPublic(RequestDTO requestDTO) {
         Project projectResult = null;
